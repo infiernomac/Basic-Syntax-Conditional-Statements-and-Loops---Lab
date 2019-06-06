@@ -1,0 +1,23 @@
+using System;
+
+namespace _12._Multiplication_Table_2._0
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int number1 = int.Parse(Console.ReadLine());
+			int number2 = int.Parse(Console.ReadLine());
+
+			for (int i = number2; i <= 10; i++)
+			{
+				Console.WriteLine($"{number1} X {i} = {number1 * i}");
+			}
+
+			if (number2 > 10)
+			{
+				Console.WriteLine($"{number1} X {number2} = {number1 * number2}");
+			}
+		}
+	}
+}
