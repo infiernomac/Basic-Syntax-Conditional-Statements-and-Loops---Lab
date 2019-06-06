@@ -1,0 +1,28 @@
+using System;
+
+namespace Sum_of_Odd_Numbers
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int number = int.Parse(Console.ReadLine());
+
+			int sum = 0;
+
+			for (int i = 1; i < 100; i += 2)
+			{
+				sum += i;
+				Console.WriteLine(i);
+				number--;
+
+				if (number.Equals(0))
+				{
+					break;
+				}
+			}
+
+			Console.WriteLine($"Sum: {sum}");
+		}
+	}
+}
